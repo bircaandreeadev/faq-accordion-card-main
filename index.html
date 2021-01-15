@@ -5,36 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="actions.js" type="text/javascript"></script>
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
-
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
-
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="row">
+    <div class="column">
+      <div class="left-column">
+        <div class="mobile-image">
+          <img class="illustration-woman-online-mobile" src="images/illustration-woman-online-mobile.svg" alt="illustration-woman-online-mobile">
+          <img class="bg-pattern-mobile" src="images/bg-pattern-mobile.svg" alt="bg-pattern-mobile">
+        </div>
+        <div class="desktop-image">
+          <!-- <img class="bg-pattern-desktop" src="images/bg-pattern-desktop.svg" alt="bg-pattern-desktop">
+          <img class="illustration-woman-online-desktop" src="images/illustration-woman-online-desktop.svg" alt="illustration-woman-online-desktop"> -->
+          <img class="box-desktop" src="images/illustration-box-desktop.svg" alt="box-desktop">
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="right-column">
+        <h1 class="text-bold title">
+          FAQ
+        </h1>
+        <ul class="text-regular dark-grey">
+          <li class="element">
+            How many team members can I invite?
+            <span class="icon-arrow-down"><img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></span>
+            <br>
+            <p class="text-light">
+              You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.
+            </p>
+          </li>
+          <li class="element">
+            What is the maximum file upload size?
+            <span class="icon-arrow-down"><img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></span>
+            <br>
+            <p class="text-light">
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </p>    
+          </li>
+          <li class="element">
+            How do I reset my password?
+            <span class="icon-arrow-down"><img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></span>
+            <br>
+            <p class="text-light">
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </p>
+          </li>
+          <li class="element">
+            Can I cancel my subscription?
+            <span class="icon-arrow-down"><img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></span>
+            <br>
+            <p class="text-light">
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </p>    
+          </li>
+          <li class="element">
+            Do you provide additional support?
+            <span class="icon-arrow-down"><img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></span>
+            <br>
+            <p class="text-light">
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
 </html>

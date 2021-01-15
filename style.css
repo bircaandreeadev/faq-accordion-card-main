@@ -1,0 +1,181 @@
+@font-face {
+        font-family: KumbhBold;
+        src: url('fonts/KumbhSans-Bold.ttf');
+        font-weight: 700;
+}
+@font-face {
+        font-family: KumbhLight;
+        src: url('fonts/KumbhSans-Light.ttf');
+        font-weight: 400;
+}
+@font-face {
+        font-family: KumbhRegular;
+        src: url('fonts/KumbhSans-Regular.ttf');
+}
+body {
+        font-family: KumbhRegular;
+        height: 100vh;
+        width:  100vw;
+        overflow: hidden;
+        background-image: linear-gradient(180deg, #af67e9 10%, #6565e7 100%);
+}
+
+.row {
+        width: 825px;
+        height: 500px;
+        background-color: white;
+        padding: 0 90px 0 0;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-wrap: wrap;
+}
+
+.column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+}
+
+.right-column {
+        padding: 50px 5px 50px 35px;
+        font-size: 14px;
+}
+.title {
+        font-size: 32px;
+}
+.text-bold {
+        font-family: 'KumbhBold';
+        font-weight: 700;
+}
+.text-light {
+        font-family: 'KumbhLight';
+        font-weight: 400;
+}
+.text-regular {
+        font-family: 'KumbhRegular';
+}
+
+.dark-grey {
+        color: hsl(229, 23%, 23%) !important;
+}
+
+.light-grey {
+        color:  hsl(0, 0%, 59%) !important;
+}
+
+li {
+        list-style: none;
+        padding: 20px 0;
+        border-bottom: 1px solid hsl(0, 0%, 59%);
+}
+li:hover {
+        color:hsl(14, 88%, 65%);
+        cursor:pointer;
+}
+li:active {
+        font-family: 'KumbhBold';
+        color: hsl(238, 29%, 16%);
+}
+li p {
+        display: none;
+        color: hsl(0, 0%, 59%) !important;
+        font-size: 12.5px;
+        margin-bottom: 0;
+}
+
+ul {
+        padding: 0;
+}
+
+.icon-arrow-down {
+        float: right;
+        padding: 0 10px;
+}
+
+.left-column {
+        background:url(images/illustration-woman-online-desktop.svg),  url(images/bg-pattern-desktop.svg);
+        background-position: left -85px center, left -576px bottom -152px;
+        background-repeat: no-repeat;
+        height: 100%;
+        position: relative;
+}
+
+.box-desktop {
+        position: absolute;
+        top: 43%;
+        left: -23%;
+        width: 47%;
+}
+
+.mobile-image {
+        display: none;
+}
+/* 
+
+.bg-pattern-desktop {
+        position: absolute;
+        z-index: 0;
+        top: -290px;
+        left: -575px;
+}
+
+.illustration-woman-online-desktop {
+        position: absolute;
+        top: 75px;
+        left: -80px;
+} */
+
+@media screen and (max-width: 600px) {
+        .row {
+                flex-direction: column;
+                width: 80%;
+                padding: 0 23px 0 0;
+                height: auto;
+        }
+
+        .left-column {
+                background: none;
+                height: 100px;
+                position: absolute;
+        }
+
+        .box {
+                display: none;
+        }
+
+        h1 {
+                text-align: center;
+        }
+
+        .right-column {
+                padding: 120px 0 50px 23px;
+                font-size: 13px;
+        }
+
+        .icon-arrow-down {
+                padding: 0;
+        }
+
+        .mobile-image {
+                display: block;
+                position: relative;
+                z-index: 10;
+                top: -107px;
+        }
+
+        .bg-pattern-mobile {
+                position: relative;
+                top: -92px;
+                right: -24px;
+        }
+
+        .desktop-image {
+                display: none;
+        }
+}
