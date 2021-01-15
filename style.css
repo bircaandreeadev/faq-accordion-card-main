@@ -69,15 +69,15 @@ body {
         color:  hsl(0, 0%, 59%) !important;
 }
 
-article {
+div.element {
         padding: 10px 0;
         border-bottom: 1px solid hsl(0, 0%, 59%);
 }
-article:hover {
+div.element:hover {
         color:hsl(14, 88%, 65%);
         cursor:pointer;
 }
-article:active {
+div.element:active {
         font-family: 'KumbhBold';
         color: hsl(238, 29%, 16%);
 }
@@ -135,16 +135,16 @@ div.questions::-webkit-scrollbar {
         display: none;
 }
 
-article button img.up-icon {
+div.element button img.up-icon {
         transform: rotate(180deg);
 }
-article button {
+div.element button {
         border: 0;
         background-color: transparent;
         float: right;
 }
 
-article button:focus {
+div.element button:focus {
         outline: none;
 }
 
