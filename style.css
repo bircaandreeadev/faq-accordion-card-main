@@ -69,30 +69,46 @@ body {
         color:  hsl(0, 0%, 59%) !important;
 }
 
-li {
-        list-style: none;
-        padding: 20px 0;
+article {
+        padding: 10px 0;
         border-bottom: 1px solid hsl(0, 0%, 59%);
 }
-li:hover {
+article:hover {
         color:hsl(14, 88%, 65%);
         cursor:pointer;
 }
-li:active {
+article:active {
         font-family: 'KumbhBold';
         color: hsl(238, 29%, 16%);
 }
-li p {
-        display: none;
+div.question-text {
         color: hsl(0, 0%, 59%) !important;
         font-size: 12.5px;
         margin-bottom: 0;
 }
 
-ul {
+div.question-text p {
         padding: 0;
 }
 
+div.question-title {
+        display: flex;
+}
+
+div.question-title p, div.question-text p {
+        width: 93%;
+}
+
+div.questions {
+        padding: 0;
+        position: relative; 
+        overflow: auto; 
+        height: 300px;
+}
+
+div.questions::-webkit-scrollbar { 
+        display: none; 
+}
 .icon-arrow-down {
         float: right;
         padding: 0 10px;
@@ -116,20 +132,43 @@ ul {
 .mobile-image {
         display: none;
 }
-/* 
 
-.bg-pattern-desktop {
-        position: absolute;
-        z-index: 0;
-        top: -290px;
-        left: -575px;
+article button img.up-icon {
+        transform: rotate(180deg);
+}
+article button {
+        border: 0;
+        background-color: transparent;
+        float: right;
 }
 
-.illustration-woman-online-desktop {
-        position: absolute;
-        top: 75px;
-        left: -80px;
-} */
+article button:focus {
+        outline: none;
+}
+
+.question-text {
+        display: none;
+}
+
+.show-text .question-text {
+        display: block;
+}
+
+.show-text .question-title {
+        font-weight: 700;
+}
+
+.up-icon {
+        display: none;
+}
+
+.show-text .up-icon {
+        display: inline;
+}
+
+.show-text .down-icon {
+        display: none;
+}
 
 @media screen and (max-width: 600px) {
         .row {
@@ -177,5 +216,9 @@ ul {
 
         .desktop-image {
                 display: none;
+        }
+
+        div.questions {
+                height: auto;
         }
 }
