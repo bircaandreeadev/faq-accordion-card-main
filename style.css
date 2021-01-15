@@ -88,15 +88,17 @@ div.question-text {
 }
 
 div.question-text p {
-        padding: 0;
+        width: 93%;
+        margin: 0.3em 0;
 }
 
 div.question-title {
         display: flex;
 }
 
-div.question-title p, div.question-text p {
+div.question-title p {
         width: 93%;
+        margin: 0.7em 0;
 }
 
 div.questions {
